@@ -86,16 +86,21 @@ body {
 }
 
 .pagination button {
-    padding: 0.5rem 1rem;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    background-color: #f9f9f9;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
     cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .pagination button:disabled {
     background-color: #e0e0e0;
     cursor: not-allowed;
+}
+
+.pagination button:hover {
+    background-color: #141414;
+    color: white;
 }
 
 .pagination span {
