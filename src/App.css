@@ -1,0 +1,209 @@
+body {
+    background-image: url('/bg2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    padding: 0 10rem;
+}
+
+.Heading {
+    text-align: center;
+    font-family: 'Abril Fatface', serif;
+    font-size: 4rem;
+    letter-spacing: 0.3rem;
+    color: #fff;
+}
+
+.character-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 columns */
+    grid-auto-rows: auto; /* Automatically adjust row height */
+    gap: 1rem; /* Space between items */
+    justify-content: center;
+}
+
+.character-item {
+    position: relative;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background: #fff;
+}
+
+.character-item a {
+    text-decoration: none;
+}
+
+.favourite-button {
+    position: absolute; /* Position relative to the character-item */
+    top: 10px; /* Distance from the top */
+    right: 10px; /* Distance from the right */
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    z-index: 1;
+}
+
+.favourite-button:focus {
+    outline: none;
+}
+
+.character-thumbnail {
+    width: 160px;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+}
+
+.character-item p {
+    margin: 0;
+    font-weight: bold;
+    font-family: 'jost', serif;
+    font-size: 1.5rem;
+    color: #000;
+    padding-bottom: 1rem;
+}
+
+.pagination {
+    font-family: 'jost', serif;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+.pagination button {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+
+.pagination button:disabled {
+    background-color: #e0e0e0;
+    cursor: not-allowed;
+}
+
+.pagination span {
+    font-weight: bold;
+}
+
+/* movie-details */
+
+.movie-details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 2rem;
+    border-radius: 8px;
+    color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    height: 100vh;
+}
+
+.movie-details-container .wrap {
+    background: #efefef;
+    color: #000;
+    padding: 1rem 3rem 2.5rem;
+    border-radius: 1rem;
+}
+
+.movie-details-container p {
+    font-size: 1.2rem;
+    font-family: 'jost', serif;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.character-name {
+    font-size: 2rem;
+    font-family: 'jost', serif;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.view-favourites-button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Text color */
+    text-decoration: none; /* Remove underline */
+    border: none;
+    border-radius: 4px; /* Rounded corners */
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.view-favourites-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+.view-favourites-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* Focus outline */
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem 0; /* Add spacing below the heading */
+    gap: 1rem; /* Space between input and button */
+}
+
+.search-input {
+    width: 400px; /* Make the input wider */
+    padding: 0.75rem; /* Add padding for a larger input */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1.2rem; /* Increase font size */
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.search-input:focus {
+    border-color: #007bff; /* Highlight border on focus */
+}
+
+.search-button {
+    padding: 0.75rem 1.5rem; /* Add padding for a larger button */
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2rem; /* Increase font size */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+.search-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* Focus outline */
+}
